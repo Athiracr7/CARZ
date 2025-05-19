@@ -1,0 +1,6 @@
+@CarZ_HostAddress = http://localhost:5133
+
+GET {{CarZ_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
