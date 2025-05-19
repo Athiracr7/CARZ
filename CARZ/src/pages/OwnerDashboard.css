@@ -1,0 +1,161 @@
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #dee3eb; /* Optional light background */
+}
+
+/* Header Section */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background: #0b1d51;
+    color: white;
+}
+
+.dashboard-title {
+    font-size: 1.8rem;
+    color: #f5f7fa;
+    font-weight: bold;
+}
+
+/* Add Car Button */
+.add-car-btn {
+    background-color: #f5f7fa;
+    color: #0b1d51;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout-btn {
+    background-color: #f5f7fa;
+    color: #0b1d51;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-car-btn:hover {
+    background-color: #195ecc;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+}
+
+.search-input:focus {
+    border-color: #2978ff;
+}
+
+/* Car Card - Unified for Regular & Search Results */
+.car-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ✅ Smooth transition for search result */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Buttons inside Car Cards */
+.car-card button {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #0b1d51;
+    color: #f5f7fa;
+}
+
+.edit-btn:hover {
+    background-color: #152c75;
+}
+
+/* Remove Button */
+.delete-btn {
+    background-color: #0b1d51;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #0b1d51;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+     background-color: #152c75; /* ✅ Slightly lighter blue on hover */ 
+     transition: 0.3s ease-in-out; /* ✅ Smooth transition */ 
+    }
+    
+.edit-btn, .delete-btn {
+     margin-right: 10px; /* ✅ Space between buttons */ 
+     padding: 10px 15px; /* ✅ Better button size */ 
+    } 
+    
+.edit-btn, .delete-btn { 
+    border-radius: 6px; /* ✅ Soft rounded edges */ 
+}
+
+/* Button Container */
+.header-buttons {
+    display: flex;
+    gap: 5px; /* ✅ Reduced spacing */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .car-card {
+        width: 90%;
+    }
+}

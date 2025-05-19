@@ -1,0 +1,57 @@
+.edit-car-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    background-color: #dee3eb; /* Optional light background */
+}
+
+h1 {
+    color: #0b1d51;
+}
+
+.status-message {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status-message.error {
+    color: red;
+}
+
+.status-message.success {
+    color: green;
+}
+
+.edit-car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.edit-car-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    font-size: 1.1rem;
+}
+
+.edit-car-form button {
+    background-color: #0b1d51;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.edit-car-form button:hover {
+    background-color: #195ecc;
+}

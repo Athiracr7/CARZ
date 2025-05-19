@@ -1,0 +1,127 @@
+/* Make container full-screen width */
+.dashboard-container {
+  height: 100vh;
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #dee3eb; /* Optional light background */
+}
+
+/* Align the Heading to Left */
+.dashboard-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0b1d51;
+  text-align: left;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+/* Center the Search Bar */
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 350px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #2978ff;
+}
+
+/* Available Cars heading centered */
+.available-cars-heading {
+  color: #0b1d51;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Cars container full-width & centered */
+.cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+}
+
+/* Car Cards */
+.car-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+  flex-grow: 1; /* Allows cards to stretch */
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Book Button */
+.book-btn {
+  background-color: #0b1d51;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #195ecc;
+}
+
+.book-btn.booked {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Ensure responsiveness for different screen sizes */
+@media (max-width: 600px) {
+  .dashboard-heading {
+      width: 95%;
+  }
+
+  .search-input {
+      width: 95%;
+  }
+
+  .cars-container {
+      width: 100%;
+      flex-wrap: wrap;
+  }
+
+  .car-card {
+      width: 100%;
+  }
+  .booked-cars-btn {
+    background-color: #f5f7fa;
+    color: #0b1d51;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+}

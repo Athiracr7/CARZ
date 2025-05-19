@@ -1,0 +1,73 @@
+/* Main Container */
+.add-car-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ✅ Full screen */
+    width: 100vw; /* ✅ Full width */
+    padding: 20px;
+    background-color: #dee3eb; /* Optional light background */
+}
+
+/* Form Styling */
+.add-car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px; /* ✅ Ensures form is well-sized */
+}
+
+.add-car-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+}
+
+.add-car-form input:focus {
+    border-color: #2978ff;
+}
+
+/* Submit Button */
+.add-car-form button {
+    background-color: #0b1d51;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.add-car-form button:hover {
+    background-color: #0b1d51;
+}
+.status-message {
+    color: rgb(8, 147, 33);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .status-message-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .add-car-container {
+        padding: 10px;
+    }
+
+    .add-car-form {
+        max-width: 90%;
+    }
+
+    .add-car-form input {
+        font-size: 1rem;
+    }
+}

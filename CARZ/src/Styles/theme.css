@@ -1,0 +1,56 @@
+:root {
+    --carz-primary: #dcdfea;
+    --carz-secondary: #2978FF;
+    --carz-accent: #FF6F3C;
+    --carz-background: #F5F7FA;
+    --carz-surface: #FFFFFF;
+    --carz-text-primary: #0B1D51;
+    --carz-text-secondary: #666666;
+  }
+  
+  /* Basic reusable utility classes */
+  .bg-primary {
+    background-color: var(--carz-primary);
+  }
+  .bg-secondary {
+    background-color: var(--carz-secondary);
+  }
+  .bg-accent {
+    background-color: var(--carz-accent);
+  }
+  .bg-surface {
+    background-color: var(--carz-surface);
+  }
+  .bg-light {
+    background-color: var(--carz-background);
+  }
+  
+  .text-primary {
+    color: var(--carz-text-primary);
+  }
+  .text-secondary {
+    color: var(--carz-text-secondary);
+  }
+  .text-white {
+    color: #0B1D51;
+  }
+  .text-accent {
+    color: var(--carz-accent);
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background-color: var(--carz-secondary);
+    color: white;
+  }
+  .btn-accent {
+    background-color: var(--carz-accent);
+    color: white;
+  }
+  
